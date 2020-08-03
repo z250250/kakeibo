@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwwthymeleaf.org">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>家計簿</title>
+        <link href="/css/text.css" rel="stylesheet">
+    </head>
+    <body>
+        <header th:insert="fragments/header::header"></header> 
+        <main>
+        	<h1 id="hello">おかえりなさい？？？？さん</h1>
+        	<h2 id="year">XXXX年XX月XX日</h2>
+            <div class="left">
+                <p>メニュー</p>
+                <ul>
+                    <li>収入・支出</li>
+                    <li>理想</li>
+                    <li>テキスト</li>
+                    <li>円グラフ</li>
+                    <li>部門別グラフ</li>
+                    <li>使えるお金</li>
+                </ul>
+            </div>
+             <div class="right">
+                <img  class="ht" src="http://chart.apis.google.com/chart?cht=p3&amp;chd=t:35,30,25,10&amp;chs=400x150&amp;chl=食費|飲料|雑費|通信費&amp;chco=CC0000|CCCC00|00CC00|0000CC" width="400" height="150" alt="円グラフのサンプル" >
+                <h3>今月使った割合</h3>
+            </div>
+        </main>
+    </body>
+</html>

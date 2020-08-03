@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwwthymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>kakeibo</title>
+</head>
+<body>
+
+	<th:block th:fragment="header">
+	 <div class="headerTop">
+		<h1 class="logo"><a href="/kakeibo/">家計簿へようこそ</a></h1>
+		<span class="signup">
+			<a th:href="@{/kakeibo/toroku/}" >
+			新規ユーザ登録はこちら
+			</a>
+		</span>
+		<span class="welcomeMsg">
+			
+		</span>
+	</div>
+	<nav>
+		<div class="loginArea">
+				<input type="text" name="userName" />
+				<input type="password" name="password" />
+				<button id="login" >ログイン</button>
+				<button id="logout" >ログアウト</button>
+				<input type="hidden" id="hiddenUserName" value="" />
+		</div>
+	
+	</nav>
+	
+	<!-- <div th:insert="fragments/dialog_login_error::dialogLoginError"></div>  -->
+	
+	</th:block>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://wwwthymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>登録</title>
+ <link href="/css/text.css" rel="stylesheet">
+</head>
+<body>
+	<header th:insert="fragments/header::header"></header>  
+	<main>
+            <form name="TorokuForm" method="post">
+                <h2>Mail_addles</h2>
+                <input type="text" size="50" name="mailAddress">
+                <h2>user_name</h2>
+                <input type="text" size="50" name="userName">
+                <h2>Password</h2>
+                <input type="password" size="50" name="password">
+                <br>
+                <button type="submit" id="to">登録</button>
+            </form>
+     </main>
+
+</body>
+</html>

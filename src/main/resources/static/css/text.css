@@ -1,0 +1,44 @@
+main{
+    width: 100%;
+    margin: auto;
+    background-color: floralwhite;
+    line-height: 50px
+}
+header{
+    background-color: orange;
+    font-size:30;
+    text-align: right;
+    width: 100%;
+    margin: auto;
+        
+}
+
+button{
+    background-color: pink;
+    color:white;
+}
+select{
+    background-color: aqua;
+    color: red;
+}
+
+#hello{
+	text-align:center;
+	color:blue;
+}
+
+#year{
+	text-align:center;
+}
+.left{
+	text-align:left;
+	
+}
+
+.right{
+	text-align:right;
+}
+
+.logo{
+	text-align:center;
+}
